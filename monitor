@@ -1,0 +1,6 @@
+for ((i=1;i<=150;i++)); 
+do
+    echo $i
+    curl -s "http://localhost" | grep -A 1 -i "<body>"
+    sleep 1s
+done
